@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#26ade0"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
+
     android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    tools:context=".MainActivity">
-</RelativeLayout>
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.16"
+        android:text="@string/txt1"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:id="@+id/image_eightBall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ball1"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:text="@string/ask"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+
+</LinearLayout>
